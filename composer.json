@@ -11,13 +11,22 @@
             "email": "adriengallou@gmail.com"
         }
     ],
-    "require-dev": {
-        "atoum/atoum": ">=1.0,<3.0"
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jubianchi/atoum"
+        }
+    ],
+    "require": {
+        "atoum/atoum": "dev-runner-auto-conf@dev"
     },
     "autoload": {
         "psr-4": {
             "mageekguy\\atoum\\deprecated\\": "classes"
         },
-        "files": ["autoloader.php"]
+        "files": [
+            "autoloader.php",
+            "configuration.php"
+        ]
     }
 }
